@@ -84,14 +84,14 @@ function generateAllPossibleNames() {
   return allPossibleNames;
 }
 
-function getRandomNameAndRemove(list) {
+const getRandomNameAndRemove = (list) => {
   const randomIndex = Math.floor(Math.random() * list.length);
   const name = list[randomIndex];
   list.splice(randomIndex, 1); // remove the name from the list to avoid duplicates
   return name;
-}
+};
 
-function generateNames(count) {
+const generateNames = (count) => {
   const finalNamesArr = [];
   const allNames = generateAllPossibleNames();
 
@@ -113,7 +113,7 @@ function generateNames(count) {
 
     return finalNamesArr;
   }
-}
+};
 
 const getMaxNames = () => {
   const maxCombinations = firstNamesArr.length * lastNamesArr.length;
