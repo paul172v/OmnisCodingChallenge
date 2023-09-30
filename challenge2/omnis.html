@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script src="./omnis.js" type="module"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="page">
+    <div class="u-col">
+      <div class="u-col">
+        <label for="input-name-filter"
+          >Only show results including this name;</label
+        >
+        <input name="input-name-filter" type="string" id="inputNameFilter" />
+      </div>
+      <div class="u-col">
+        <label for="input-name-count">Number of names to generate</label>
+        <input name="input-name-count" type="number" id="inputNameCount" />
+      </div>
+      <button id="btnGenerateNames">Generate Names</button>
+      <button id="btnGetMaxPossibleCombinations">
+        Max possible combinations
+      </button>
+    </div>
+    <ul id="names-wrapper"></ul>
+  </body>
+</html>
