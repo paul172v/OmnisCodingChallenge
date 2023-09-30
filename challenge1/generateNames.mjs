@@ -72,7 +72,7 @@ const lastNamesArr = [
 ////// so that there are more possible combinations in case someone tried to brute force this.
 ////// If we were supposed to have unique first names as well as unique last names then I apologize for the misunderstanding.
 
-function generateAllPossibleNames() {
+const generateAllPossibleNames = () => {
   const allPossibleNames = [];
 
   for (let firstName of firstNamesArr) {
@@ -82,7 +82,7 @@ function generateAllPossibleNames() {
   }
 
   return allPossibleNames;
-}
+};
 
 const getRandomNameAndRemove = (list) => {
   const randomIndex = Math.floor(Math.random() * list.length);
