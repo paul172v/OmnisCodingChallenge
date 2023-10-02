@@ -77,7 +77,13 @@ const generateAllPossibleNames = () => {
 
   for (let firstName of firstNamesArr) {
     for (let lastName of lastNamesArr) {
-      allPossibleNames.push({ firstName, lastName });
+      allPossibleNames.push({
+        firstName,
+        lastName,
+        phoneNumber: `+44 ${Math.random()
+          .toString()
+          .substr(2, 4)} ${Math.random().toString().substr(2, 6)}`,
+      });
     }
   }
 

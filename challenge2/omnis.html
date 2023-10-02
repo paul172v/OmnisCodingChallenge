@@ -2,25 +2,33 @@
   <head>
     <script src="./omnis.js" type="module"></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Playfair+Display:ital,wght@0,400;0,800;1,400;1,800&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body class="page">
-    <div class="u-col">
+    <div class="page-wrapper">
       <div class="u-col">
-        <label for="input-name-filter"
-          >Only show results including this name;</label
-        >
-        <input name="input-name-filter" type="string" id="inputNameFilter" />
+        <div class="u-col">
+          <label for="input-name-filter"
+            >Only show results including this name;</label
+          >
+          <input name="input-name-filter" type="string" id="inputNameFilter" />
+        </div>
+        <div class="u-col">
+          <label for="input-name-count">Number of names to generate</label>
+          <input name="input-name-count" type="number" id="inputNameCount" />
+        </div>
+        <button class="btn" id="btnGenerateNames">Generate Names</button>
+        <button class="btn" id="btnGetMaxPossibleCombinations">
+          Max possible combinations
+        </button>
       </div>
-      <div class="u-col">
-        <label for="input-name-count">Number of names to generate</label>
-        <input name="input-name-count" type="number" id="inputNameCount" />
-      </div>
-      <button id="btnGenerateNames">Generate Names</button>
-      <button id="btnGetMaxPossibleCombinations">
-        Max possible combinations
-      </button>
+      <ul id="names-wrapper"></ul>
     </div>
-    <ul id="names-wrapper"></ul>
   </body>
 </html>
