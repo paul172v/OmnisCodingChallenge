@@ -49,6 +49,14 @@ const triggerNameGenerator = () => {
         document
           .getElementById(`${el.firstName}_${el.lastName}`)
           .appendChild(span);
+
+        // Add click event listener to the li
+        listItem.addEventListener("click", function () {
+          // Toggle visibility of the span
+          const spanStyle = span.style.display;
+          span.style.display =
+            spanStyle === "none" || spanStyle === "" ? "inline" : "none";
+        });
       } else if (
         (filteredName && el.firstName.includes(filteredName)) ||
         el.lastName.includes(filteredName)
@@ -78,6 +86,14 @@ const triggerNameGenerator = () => {
         document
           .getElementById(`${el.firstName}_${el.lastName}`)
           .appendChild(span);
+
+        // Add click event listener to the li
+        listItem.addEventListener("click", function () {
+          // Toggle visibility of the span
+          const spanStyle = span.style.display;
+          span.style.display =
+            spanStyle === "none" || spanStyle === "" ? "inline" : "none";
+        });
       }
     });
 };
@@ -123,6 +139,14 @@ const triggerGetMaximumCombinations = () => {
       document
         .getElementById(`${el.firstName}_${el.lastName}`)
         .appendChild(span);
+
+      // Add click event listener to the li
+      listItem.addEventListener("click", function () {
+        // Toggle visibility of the span
+        const spanStyle = span.style.display;
+        span.style.display =
+          spanStyle === "none" || spanStyle === "" ? "inline" : "none";
+      });
     });
 };
 

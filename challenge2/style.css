@@ -118,12 +118,9 @@ button {
   display: none;
   color: orange;
   font-size: 1.4rem;
+  margin-left: 1rem;
 }
 
 li:hover {
   cursor: pointer;
-}
-
-li:hover .tooltip {
-  display: block;
 }
